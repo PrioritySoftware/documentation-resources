@@ -31,7 +31,7 @@
       <ul>
         <li>
           <strong>
-            <a href="{{ page.collection | append: '/' | append: group.name | append: '/' | append: group.items[0].title | relative_url }}">{{group.name}}</a>
+            <a href="{{ '/' | append: group.name | append: '/' | append: group.items[0].title | relative_url }}">{{group.name}}</a>
           </strong>
         </li>
         {% for item in group.items %}
