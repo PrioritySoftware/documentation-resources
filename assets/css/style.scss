@@ -56,11 +56,11 @@ body
   {
     padding-left: 0;
     padding-right: 0;
-    margin-left: 320px;
-    margin-right: 17px;
+    margin-left: 330px;
+    margin-right: 60px;
 
     &.default {
-      margin-left: 17px;
+      margin-left: 60px;
     }
     h2
     {
@@ -72,7 +72,7 @@ body
     // }
     pre
     {
-      background-color:transparent;
+      background-color: white;
       border: 1px solid #DADADA;
       box-shadow:none;
       max-width: 96%;
@@ -80,8 +80,26 @@ body
     }
     code
     {
-      background-color:#F7F7F7;
+      background-color:#f2f2f2;
     }
+    .highlight {
+      code {
+        background-color: transparent;
+      }
+        .s1, .s {
+          color: #FF595E;
+        }
+        .nl,.nt, .mi, .kr, .k, .kd , .kc {
+          color: #00b0ec;
+        }
+        .err {
+          color: #FF595E;
+          background: none;
+        }
+        .na, {
+          color: #000;
+        }
+      }
     table, table td,  th 
     {
     border: none;
