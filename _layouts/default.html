@@ -27,5 +27,18 @@
         {{ content }}
       </section>
     </main>
+    <script>
+    $(document).ready(function()
+    {
+      if(screen.width<=640)
+      {
+        $("body").addClass("mobile");
+      }
+      else
+      {
+        $("body").removeClass("mobile");
+      }
+    });
+    </script>
   </body>
 </html>

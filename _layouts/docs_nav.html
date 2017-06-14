@@ -68,12 +68,19 @@
   </main>
 
   <script>
-    $(document).ready(function(){
+    $(document).ready(function()
+    {
       if(screen.width<=640)
+      {
+        $("body").addClass("mobile");
         $('#primary-navigation').infinitypush({offcanvas:true,spacing:40});   
+      }
       else
+      {
+        $("body").removeClass("mobile");
         $('#primary-navigation').infinitypush({offcanvas:false,spacing:40});
-        });
+      }
+    });
 
         //try it frame
         var showTryIt=function(btn)

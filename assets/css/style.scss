@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+@import "./mobile.theme";
 body
 {
   background-color:white;
