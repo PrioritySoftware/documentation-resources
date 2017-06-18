@@ -107,8 +107,7 @@
         };
     </script>
     {% if page.collection-title == "Web SDK" %}
-      <button id="try-it-button" onclick="showTryIt(this)">Try It Yourself</button>
-      <iframe id="try-it-frame" src="https://www.eshbelsaas.com/ui/developer_portal/tryIt/"></iframe>
+      <a id="try-it-button" href="{{'/tryit' | relative_url'}}">Try It Yourself</a>
     {% endif %}
   </body>
 </html>
